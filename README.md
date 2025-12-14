@@ -36,9 +36,17 @@ piler is an open source email archival application. Please visit https://www.mai
 - accounting
 - recognised formats: PST, EML, Maildir, mailbox
 
-## Quick deb package install
+## Installation
 
-### Install the prerequisites
+### Docker
+
+```
+docker compose up -d
+```
+
+### Bare Metal
+
+#### Install the prerequisites
 
 ```
 apt-get update
@@ -56,7 +64,7 @@ apt-get update && apt-get install -y manticore manticore-columnar-lib manticore-
 rm -f manticore-repo.noarch.deb
 ```
 
-### Deploy piler
+#### Deploy piler
 
 ```
 dpkg -i piler_1.4.8-noble-e885d9b_arm64.deb
